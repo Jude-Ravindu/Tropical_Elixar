@@ -1,4 +1,4 @@
-# 🌴 Tropical Elixar 🥥 Coconut Food Company Website 🌴
+# 🌴 Tropical Elixar - Coconut Food Company Website 🌴
 
 This is a **static website** designed as a GUI for *Tropical Elixar*, a company specializing in coconut-based products. This website was developed as part of a university assignment. The site showcases the company's offerings, provides company information, and features interactive elements for improved user experience.
 
