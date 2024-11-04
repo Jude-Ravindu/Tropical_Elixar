@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Products - Tropical Elixar</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid text-center position-relative">
+
+        <!-- Header -->
+        <div class="row position-fixed w-100 header-div " id="header-div">
+            <div class="col-12 ">
+                <div class="row d-flex ">
+                    <div class="order-1 order-md-1 order-lg-1 col-6 col-md-6 col-lg-2 text-center d-flex flex-column justify-content-center">
+                        <div class="row beforLogoDiv">
+                            <div class="logo-div img-set" style="background-image: url(img/Tropical-Elexsa-01.png);">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-3  d-none d-md-block order-md-3 order-lg-2 col-12 col-md-12 col-lg-8 d-flex flex-column justify-content-center align-content-center">
+                        <div class="row h-100 flex-column flex-md-row">
+                            <div class="col py-2 central header-btn" onclick=" window.location.href = 'index.html'">Home
+                            </div>
+                            <div class="col py-2 central header-btn" onclick=" window.location.href = 'products.html'">
+                                Products</div>
+                            <div class="col py-2 central header-btn" onclick=" window.location.href = 'about.html'">
+                                About US</div>
+                            <div class="col py-2 central header-btn" onclick=" window.location.href = 'gallery.html'">
+                                Gallery</div>
+                            <div class="col py-2 central header-btn" onclick=" window.location.href = 'contact.html'">
+                                Contact</div>
+                        </div>
+                    </div>
+                    <div class="order-2 d-none d-md-block order-md-2 order-lg-3 col-6 col-md-6 col-lg-2">
+                        <div class="row h-100 w-100 join-btn-div-row">
+                            <div class="col-7 shadow-sm-edit central join-btn py-3"  onclick=" window.location.href = 'login.html'">Join</div>
+                            <div class="central shadow-lg-edit color-mode-div rounded-circle" id="dark_btn"
+                                onclick="theme_change();">
+                                <i class="bi bi-moon-fill fs-4 p-0 m-0" id="theme_icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-2 col-6 dropdown d-md-none d-lg-none d-flex justify-content-center align-items-center">
+                        <button class="dropdown-toggle header-dropdown-btn" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-list fs-3"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-edit">
+                            <li><a class="dropdown-item header-btn" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item header-btn" href="products.html">Products</a></li>
+                            <li><a class="dropdown-item header-btn" href="about.html">About US</a></li>
+                            <li><a class="dropdown-item header-btn" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item header-btn" href="contact.html">Contact</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"  href="login.html">
+                                    <div class="col shadow-sm-edit central join-btn py-2">Join</div>
+                                </a></li>
+                            <li><a class="dropdown-item" onclick="theme_change();">
+                                    <div class="central shadow-lg-edit color-mode-div rounded-circle" id="dark_btn">
+                                        <i class="bi bi-moon-fill fs-4 p-0 m-0" id="theme_icon"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+
+
+        <!-- Prodcts -->
+        <section>
+            <div class="row py-5">
+                <div class="col-12 pt-4 add-margin">
+                    <div class="row central py-2 pt-5">
+                        <h1 class="">Product of Tropical Elixar</h1>
+                        <span class="pb-3 w-75 " style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Explore our diverse range of coconut-inspired products at Tropical
+                            Elixar. From delicious foods and refreshing drinks to nourishing facewash, exquisite wine,
+                            vinegar, soothing soap, pure oil, and delectable sweets – we have something for every
+                            coconut enthusiast. Embrace the goodness of coconuts in every aspect of your life with our
+                            thoughtfully curated selection."</span>
+                    </div>
+                    <div class="row d-flex justify-content-evenly searching_area mx-3">
+                        <div class="col-12 col-md-6 col-lg-6 py-2">
+                            <div class="row central">
+                                <div class="col-11 central search_input_div p-0">
+                                    <select name="" class="search-select " id="search-select"
+                                        onchange="selectionChaneFuntion();">
+                                        <option class="select-option" value="no" selected><span
+                                                class="select-option">Select</span></option>
+                                        <option class="select-option" value="Biscuits">Biscuits</option>
+                                        <option class="select-option" value="Coir">Coir</option>
+                                        <option class="select-option" value="Drink">Drink</option>
+                                        <option class="select-option" value="Fash-Wash">Fash-Wash</option>
+                                        <option class="select-option" value="Hand-Wash">Hand-Wash</option>
+                                        <option class="select-option" value="Ice-Cream">Ice-Cream</option>
+                                        <option class="select-option" value="Jam">Jam</option>
+                                        <option class="select-option" value="Milk">Milk</option>
+                                        <option class="select-option" value="Oil">Oil</option>
+                                        <option class="select-option" value="Sweets">Sweets</option>
+                                        <option class="select-option" value="Soap">Soap</option>
+                                        <option class="select-option" value="Vinegar">Vinegar</option>
+                                        <option class="select-option" value="Wine">Wine</option>
+                                        <option class="select-option" value="Yogat">Yogat</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-5 py-2">
+                            <div class="row central">
+                                <div class="col-11 central search_input_div">
+                                    <input type="text" name="" placeholder="Search" id="search"
+                                        class="search_input col">
+                                    <i class="bi bi-search px-2 search-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-md-1 col-lg-1 py-2">
+                            <div class="row central">
+                                <div class=" central filter_remove_div" onclick="removeFilters();">
+                                    <i class="bi bi-x m-0 p-0 fs-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 py-4">
+                    <div class="row gap-5 justify-content-center align-content-center" id="productsContainer">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Prodcts -->
+
+
+
+
+    </div>
+    <!-- footer -->
+    <div class="row pt-4 w-100 footer_div p-0 m-0 ">
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center text-center pt-4">
+            <div class="row w-100 gap-1">
+                <h5>About Our Coconut Factory</h5>
+                <p class="text-justify-content">
+                    Welcome to Tropical Elixar, your trusted source for premium coconut products. We are committed
+                    to delivering high-quality coconuts and coconut-based products to our customers worldwide.
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center text-center pt-4">
+            <div class="row w-100 gap-1">
+                <h5>Sort Cuts Link</h5>
+                <span class="py-1 text-start"><a href="#" class="text-decoration-none text-color-font">Home -
+                        <small>Home
+                            Page</small></a></span>
+                <span class="py-1 text-start"><a href="#" class="text-decoration-none text-color-font">Product -
+                        <small>Our
+                            All Products</small></a></span>
+                <span class="py-1 text-start"><a href="#" class="text-decoration-none text-color-font">About US -
+                        <small>Our
+                            History</small></a></span>
+                <span class="py-1 text-start"><a href="#" class="text-decoration-none text-color-font">Projects -
+                        <small>Old
+                            & Ongoing Works</small></a></span>
+                <span class="py-1 text-start"><a href="#" class="text-decoration-none text-color-font">Contact -
+                        <small>Contact Details</small></a></span>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center text-center pt-4">
+            <div class="row w-100 gap-1">
+                <h5>Follow Us</h5>
+                <p class="text-justify-content">Stay connected with us on social media for the latest updates and
+                    promotions.</p>
+                <div class="col-10 text-start">
+                    <i class="bi bi-facebook me-1 align-self-start"></i>
+                    <a href="#" class="text-decoration-none  text-color-font">Facebook</a>
+                </div>
+                <div class="col-10 text-start">
+                    <i class="bi bi-youtube me-1"></i>
+                    <a href="#" class="text-decoration-none text-color-font">Youtube</a>
+                </div>
+                <div class="col-10 text-start">
+                    <i class="bi bi-twitter-x me-1"></i>
+                    <a href="#" class="text-decoration-none text-color-font">X - Twitter</a>
+                </div>
+                <div class="col-10 text-start">
+                    <i class="bi bi-instagram me-1"></i>
+                    <a href="#" class="text-decoration-none text-color-font">Instagram</a>
+                </div>
+                <div class="col-10 text-start">
+                    <i class="bi bi-pinterest me-1"></i>
+                    <a href="#" class="text-decoration-none text-color-font">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center text-center pt-4">
+            <div class="row w-100 gap-1">
+                <h5>Contact Us</h5>
+                <p class="text-start fs-6">
+                    <strong>Address:</strong><br>No.22 S.Perera Road, Maradana Colombo, Western Province, Sri
+                    lanka<br><br>
+                    <strong>Email:</strong> <br>info@tropicalelixar.com<br><br>
+                    <strong>Phone:</strong><br> +1 (123) 456-7890
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 central p-0 m-0 central border-1 border-top mt-3">
+            <span class="text-center p-0 m-0 py-3">&copy; 2024 Tropical Elixar. All rights reserved.</span>
+        </div>
+    </div>
+    <!-- footer -->
+
+
+    <script src="product.js"></script>
+    <script src="bootstrap.bundle.js"></script> 
+</body>
+
+</html>
